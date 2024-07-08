@@ -8,7 +8,6 @@ import GlobalStyle from "./assets/Style/Globalstyle"
 function App() {
   return (
     <>
-      <GlobalStyle/>
       <Header/>
       <Hero/>
       <About/>
