@@ -13,19 +13,19 @@ function Contact() {
                     <ul>
                         <li>
                             <h4>Nombre:</h4>
-                            <ContactInput type="text" placeholder="Nombre"/>
+                            <ContactInput id="name" type="text" placeholder="Nombre"/>
                         </li>
                         <li>
                             <h4>Apellido:</h4>
-                            <ContactInput type="text" placeholder="Apellido"/>
+                            <ContactInput id="last-name" type="text" placeholder="Apellido"/>
                         </li>
                         <li>
                             <h4>Email:</h4>
-                            <ContactInput type="email" placeholder="example@gameshop.com"/>
+                            <ContactInput id="e-mail" type="email" placeholder="example@gameshop.com"/>
                         </li>
                         <li>
                             <h4>Asunto:</h4>
-                            <ContactInput type="texto" placeholder="Asunto"/>
+                            <ContactInput id="comment" type="text" placeholder="Asunto"/>
                         </li>
                     </ul>
                     <CardButton className="buttonForm" type="submit">Enviar</CardButton>
