@@ -1,20 +1,39 @@
 import Header from "./assets/components/Header/Header"
-import About from "./assets/components/About/About"
-import Hero from "./assets/components/Hero/Hero"
-import Productos from "./assets/components/Productos/Productos"
 import Footer from "./assets/components/Footer/Footer"
 import GlobalStyle from "./assets/Style/Globalstyle"
+import Layout from "./assets/components/Layout/Layout"
+import Contact from "./assets/components/Pages/Contact/Contact"
+import AboutPage from "./assets/components/Pages/AboutPage/AboutPage"
+import ProductsPage from "./assets/components/Pages/ProductsPage/ProductsPage"
+import Home from "./Home"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import MenuBurger from "./assets/components/Header/MenuBurger/MenuBurger"
+import MenuProvider from "./assets/components/Header/MenuBurger/functionburger"
 
 function App() {
   return (
     <>
       <GlobalStyle/>
-      <Header/>
-      <Hero/>
-      <About/>
-      <Productos/>
-      <Footer/>
+        <BrowserRouter>
+          <MenuProvider>
+            <Layout>
+              <Header/>
+            </Layout>
+            <MenuBurger/>
+          </MenuProvider>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/Home" element={<Home/>}/>
+            <Route path="Contact" element={<Contact/>}/>
+            <Route path="ProductsPage" element={<ProductsPage/>}/>
+            <Route path="AboutPage" element={<AboutPage/>}/>
+          </Routes>
+          <Layout>
+            <Footer/>
+          </Layout>
+        </BrowserRouter>
     </>
+      
   )
 }
 export default App

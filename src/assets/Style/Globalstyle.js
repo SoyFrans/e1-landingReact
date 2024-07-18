@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         font-family: 'Arial', sans-serif;
         list-style: none;
+        text-decoration: none;
     }
 `;
 export default GlobalStyle

@@ -1,16 +1,12 @@
-import {CardContainer, CardTxt, CardStock} from "./ProductStyle"
-
-function CardProduct({ cardImg, cardTitle, cardButton, cardPrice }) {
+import {CardContainer, CardTxt, CardStock, CardButton, CardImg} from "./ProductStyle"
+function CardProduct( {name, price, img  } ) {
     return (
         <CardContainer>
-            <div>
-                <img className='card-img' src={cardImg} alt="card-img"/>
-            </div>
-           
+            <CardImg src={img} alt={name}/>
             <CardTxt className='card-container-description'>
-                <button className='card-button'>{cardButton}</button>
-                <h3 className='card-title'>{cardTitle}</h3>
-                <span>$ {cardPrice}</span>
+                <CardButton>Comprar</CardButton>
+                <h3 className='card-title'>{name}</h3>
+                <span>$ {price}</span>
             </CardTxt>
             <CardStock>
                 <h3>Stock</h3>

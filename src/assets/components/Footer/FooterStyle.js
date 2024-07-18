@@ -15,6 +15,7 @@ export const FooterContainer = styled.div`
 
 export const FooterTxt = styled.div`
     display: flex;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
     font-size: 45px;
@@ -25,5 +26,18 @@ export const FooterImg = styled.div`
     img {
         width: 90pt;
         height: auto;
+    }
+`;
+
+export const FooterFollow = styled.div`
+    display: flex;
+    flex-direction: column;
+    h4 {
+        font-size: 17px;
+        color: grey;
+    }
+    ul {
+        display: flex;
+        gap: 10px;
     }
 `;
