@@ -5,6 +5,7 @@ import Layout from "./assets/components/Layout/Layout"
 import Contact from "./assets/components/Pages/Contact/Contact"
 import AboutPage from "./assets/components/Pages/AboutPage/AboutPage"
 import ProductsPage from "./assets/components/Pages/ProductsPage/ProductsPage"
+import ProdPage from "./assets/components/Pages/ProductsPage/ProductsPage"
 import Home from "./Home"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import MenuBurger from "./assets/components/Header/MenuBurger/MenuBurger"
@@ -25,8 +26,9 @@ function App() {
             <Route path="/" element={<Home/>}/>
             <Route path="/Home" element={<Home/>}/>
             <Route path="Contact" element={<Contact/>}/>
-            <Route path="ProductsPage" element={<ProductsPage/>}/>
+            <Route path="ProductsPage" element={<ProdPage/>}/>
             <Route path="AboutPage" element={<AboutPage/>}/>
+            <Route path="*" element={<Home/>}/>
           </Routes>
           <Layout>
             <Footer/>
