@@ -24,9 +24,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/Home" element={<Home/>}/>
-            <Route path="Contact" element={<Contact/>}/>
-            <Route path="ProductsPage" element={<ProdPage/>}/>
-            <Route path="AboutPage" element={<AboutPage/>}/>
+            <Route path="Contacto" element={<Contact/>}/>
+            <Route path="Productos" element={<ProdPage/>}/>
+            <Route path="SobreNosotros" element={<AboutPage/>}/>
             <Route path="*" element={<Home/>}/>
           </Routes>
           <Layout>
