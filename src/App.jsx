@@ -9,18 +9,23 @@ import Home from "./Home"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import MenuBurger from "./assets/components/Header/MenuBurger/MenuBurger"
 import MenuProvider from "./assets/components/Header/MenuBurger/functionburger"
+import MenuShopProvider from "./assets/components/Header/ShopList/functionshoplist"
+import ShopList from "./assets/components/Header/ShopList/ShopList"
 
 function App() {
   return (
     <>
       <GlobalStyle/>
         <BrowserRouter>
-          <MenuProvider>
-            <Layout>
+          <MenuShopProvider>
+            <MenuProvider>
+              <Layout>
               <Header/>
-            </Layout>
-            <MenuBurger/>
-          </MenuProvider>
+              </Layout>
+              <MenuBurger/>
+              <ShopList/>
+            </MenuProvider>
+          </MenuShopProvider>
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/Home" element={<Home/>}/>

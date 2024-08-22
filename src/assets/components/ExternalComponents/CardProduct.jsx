@@ -1,5 +1,5 @@
 import {CardContainer, CardTxt, CardStock, CardButton, CardImg} from "./ProductStyle"
-function CardProduct( {name, price, img  } ) {
+function CardProduct( { name, price, img } ) {
     return (
         <CardContainer>
             <CardImg src={img} alt={name}/>

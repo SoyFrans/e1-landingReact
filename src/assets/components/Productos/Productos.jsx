@@ -1,6 +1,6 @@
 import {ProductsContainer,TitleProduct } from "./ProdStyle"
 import CardProduct from "../ExternalComponents/CardProduct"
-import { products } from "../ExternalComponents/AllProducts/AllProducts"
+import { products } from "../ExternalComponents/Data/AllProducts"
 
 function Productos() {
     return (

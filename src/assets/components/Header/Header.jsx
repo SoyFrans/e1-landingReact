@@ -2,10 +2,12 @@ import { HeaderStyled, ListStyled, LogoStyled, HeaderBurger, HeaderFind, InputIc
 import { Outlet, Link } from "react-router-dom"
 import NavList from "./NavList.jsx"
 import { useContext } from "react"
-import { BurgerContext } from "./MenuBurger/functionburger.jsx"
+import { BurgerContext } from "./MenuBurger/functionburger"
+import { ShopContext } from "./ShopList/functionshoplist.jsx"
 
 function Header() {
-    const {toggleMenu} = useContext(BurgerContext)
+    const {toggleMenu} = useContext(BurgerContext);
+    const {shopMenu} = useContext(ShopContext);
     return (
         <HeaderStyled>
             <HeaderBurger>
@@ -23,6 +25,9 @@ function Header() {
             </HeaderFinder>
             <ListStyled>
                 <NavList/>
+                <button onClick={shopMenu}>
+                    <span className="material-symbols-outlined">shopping_cart</span>
+                </button>
             </ListStyled>
             <Outlet/>
         </HeaderStyled>  

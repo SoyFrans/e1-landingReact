@@ -53,6 +53,16 @@ export const InputIcon = styled.img`
 `;
 
 export const ListStyled = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    button {
+        background-color: transparent;
+        border: none;
+    }
+    span {
+        font-size: 30px;
+    }
     ul {
         display: flex;
         align-items: center;
