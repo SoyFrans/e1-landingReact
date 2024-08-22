@@ -7,9 +7,9 @@ function Productos() {
         <div>
             <TitleProduct> 👾 Nuestros Juegos 👾 </TitleProduct>
                 <ProductsContainer>
-                        {products.map((prod)=> (
-                        <CardProduct key={prod.id} name={prod.name} price={prod.price} img={prod.img}/>
-                        ))}
+                    {products.map((prod)=> (
+                    <CardProduct key={prod.id} name={prod.name} price={prod.price} img={prod.img}/>
+                    ))}
                 </ProductsContainer> 
         </div>
     )
