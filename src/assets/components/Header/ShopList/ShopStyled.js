@@ -11,6 +11,7 @@ export const ShopContainer = styled.div`
     right: 0;
     top: 10;
     background-color: #333; 
+    padding: 20px;
     button {
         margin: 25px;
         cursor: pointer;
